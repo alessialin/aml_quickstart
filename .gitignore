@@ -1,0 +1,90 @@
+# Azure ML Quickstart - .gitignore
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Azure ML specific
+.azureml/
+outputs/
+logs/
+.azure/
+
+# Local model outputs and experiments
+local_outputs/
+test_outputs/
+models/
+experiments/
+
+# Data files (optional - uncomment if you don't want to track data)
+# data/
+# *.csv
+# *.json
+# *.parquet
+
+# OS specific
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+*.swp
+*.swo
+*~
+
+# Config files with sensitive data
+config.json
+azure_config.json
+
+# Backup files
+*.bak
+*.backup

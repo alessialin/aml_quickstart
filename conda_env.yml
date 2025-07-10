@@ -1,0 +1,15 @@
+name: sklearn-training-env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - pip
+  - pip:
+    - azure-ai-ml>=1.12.0
+    - azure-identity>=1.15.0
+    - pandas>=1.5.0
+    - scikit-learn>=1.3.0
+    - numpy>=1.24.0
+    - python-dotenv>=1.0.0
+    - azureml-core>=1.50.0
