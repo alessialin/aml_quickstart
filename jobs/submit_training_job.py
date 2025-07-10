@@ -64,7 +64,7 @@ def main():
         env = Environment(
             name=env_name,
             description="Environment for scikit-learn training",
-            conda_file="../conda_env.yml",  # Use conda environment file
+            conda_file="conda_env.yml",  # Use conda environment file
             image="mcr.microsoft.com/azureml/openmpi4.1.0-ubuntu20.04:latest",
             version="1"
         )
