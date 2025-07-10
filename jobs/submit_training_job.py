@@ -17,7 +17,7 @@ def main():
     subscription_id = os.getenv("AZURE_SUBSCRIPTION_ID")
     resource_group = os.getenv("AZURE_RESOURCE_GROUP")
     workspace_name = os.getenv("AZURE_ML_WORKSPACE_NAME")
-    compute_name = os.getenv("AZURE_ML_COMPUTE_NAME", "cpu-cluster")  # Default compute name
+    compute_name = os.getenv("AZURE_ML_COMPUTE_NAME", "cpu-cluster")
     
     if not all([subscription_id, resource_group, workspace_name]):
         raise ValueError(
@@ -45,7 +45,7 @@ def main():
         compute_target = AmlCompute(
             name=compute_name,
             type="amlcompute",
-            size="Standard_DS3_v2",  # Cheapest general-purpose VM size
+            size="Standard_DS3_v2",  # Choose an appropriate VM size
             min_instances=0,  # Scale down to 0 when not in use
             max_instances=1,  # Keep it small for cost efficiency
             idle_time_before_scale_down=120,  # Scale down after 2 minutes of inactivity

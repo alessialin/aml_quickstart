@@ -55,7 +55,7 @@ pip install -r requirements.txt
    AZURE_SUBSCRIPTION_ID=your_subscription_id_here
    AZURE_RESOURCE_GROUP=your_resource_group_here
    AZURE_ML_WORKSPACE_NAME=your_workspace_name_here
-   AZURE_ML_COMPUTE_NAME=cpu-cluster
+   AZURE_ML_COMPUTE_NAME=cpu_cluster_name_here
    ```
 
 ### 3. Authenticate with Azure
